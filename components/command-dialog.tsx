@@ -68,7 +68,7 @@ export function CommandDialogComponent({ ...props }: DialogProps) {
       <CommandDialog open={open} onOpenChange={setOpen}>
         <CommandInput placeholder="Type a command or search..." />
         <CommandList>
-          <CommandEmpty>No results found.</CommandEmpty>
+          <CommandEmpty>无相关结果.</CommandEmpty>
           <CommandGroup heading="Content">
             {navigationLinks.map((item) =>
               item.content ? (

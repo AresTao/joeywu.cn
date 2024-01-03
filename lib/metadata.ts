@@ -43,7 +43,7 @@ const siteMetadata: SiteMetaData = {
   },
   postsPerPage: 10,
   postsOnHomePage: 8,
-  projectsOnHomePage: 4,
+  projectsOnHomePage: 5,
 };
 
 export default siteMetadata;

@@ -1,14 +1,14 @@
 export const projects = [
   {
-    title: "eub.cc",
-    description: `Shortlinks as a service.短链接服务`,
-    href: "https://eub.cc",
+    title: "pintowebsite",
+    description: `Make your pins into a website to serve others.`,
+    href: "https://pintowebsite.cn",
     mediaSrc: "/eub2.png",
     mediaType: "image",
   },
   {
-    title: "survey",
-    description: `Survey as a service.市场调研、用户反馈服务`,
+    title: "eub.cc",
+    description: `shortlink as a service.短链接服务`,
     href: "#",
     mediaSrc: "/easysurvey.png",
     mediaType: "image",

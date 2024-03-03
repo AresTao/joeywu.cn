@@ -132,15 +132,15 @@ export default async function PostPage({ params }: PostProps) {
         <div className="lg:hidden">
           <div className="mb-4 mt-1 text-sm leading-snug text-muted-foreground">
             <p className="mb-2">{`${post.readTimeMinutes} mins read`}</p>
-            <time>发布时间: {format(parseISO(post.publishedDate), "LLLL d, yyyy")} </time>
+            <time>create at: {format(parseISO(post.publishedDate), "LLLL d, yyyy")} </time>
             <br />
             {post.lastUpdatedDate && (
-              <time> 最近更新: {format(parseISO(post.lastUpdatedDate), "LLLL d, yyyy")}</time>
+              <time> last modified: {format(parseISO(post.lastUpdatedDate), "LLLL d, yyyy")}</time>
             )}
           </div>
           <Accordion type="single" collapsible>
             <AccordionItem value="table-of-contents">
-              <AccordionTrigger>目录</AccordionTrigger>
+              <AccordionTrigger>Table Of Contents</AccordionTrigger>
               <AccordionContent>
                 <TableOfContents chapters={post.headings} />
               </AccordionContent>
@@ -181,7 +181,7 @@ export default async function PostPage({ params }: PostProps) {
         <aside className="hidden lg:block">
           <Card className={cn("sticky top-28 mb-4")}>
             <CardHeader>
-              <CardTitle>目录</CardTitle>
+              <CardTitle>Table Of Contents</CardTitle>
             </CardHeader>
             <CardContent className="grid gap-4">
               <TableOfContents chapters={post.headings} />
@@ -190,10 +190,10 @@ export default async function PostPage({ params }: PostProps) {
             <CardFooter>
               <div className="mb-4 mt-1 text-sm leading-snug text-muted-foreground">
                 <p className="mb-2">{`${post.readTimeMinutes} 分钟阅读时长`}</p>
-                <time>发布时间: {format(parseISO(post.publishedDate), "LLLL d, yyyy")} </time>
+                <time>Create at: {format(parseISO(post.publishedDate), "LLLL d, yyyy")} </time>
                 <br />
                 {post.lastUpdatedDate && (
-                  <time> 最近更新: {format(parseISO(post.lastUpdatedDate), "LLLL d, yyyy")}</time>
+                  <time> last modified: {format(parseISO(post.lastUpdatedDate), "LLLL d, yyyy")}</time>
                 )}
               </div>
             </CardFooter>

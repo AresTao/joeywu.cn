@@ -13,17 +13,17 @@ export const defaultAuthor: AuthorType = {
   socialProfiles,
   email: "ztwu0725@gmail.com",
   website: "https://joeywu.cn",
-  jobTitle: "做技术的生意人",
-  company: "要么增长 要么降本 要么提效 要么别做",
+  jobTitle: "I'm a coder, creator, solopreneur.",
+  company: "",
   availableForWork: false,
   location: {
-    city: "北京",
+    city: "Beijing",
     media: "/changcheng.png",
   },
 };
 
 const defaultTitle = `${defaultAuthor.name}`;
-const defaultDescription = `你好，我是 ${defaultAuthor.name}. 做技术的生意人，构建解决问题的产品，提供高价值`;
+const defaultDescription = `Hello my friend, I'm ${defaultAuthor.name}. I'm a coder, creator, solopreneur.`;
 
 const siteMetadata: SiteMetaData = {
   title: {
@@ -38,7 +38,7 @@ const siteMetadata: SiteMetaData = {
   defaultTheme: "system",
   activeAnnouncement: false,
   announcement: {
-    buttonText: "Support on DevHunt →",
+    buttonText: "Support me →",
     link: "https://devhunt.org/tool/modern-developer-blog-template-digital-garden-starter",
   },
   postsPerPage: 10,

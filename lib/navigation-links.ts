@@ -32,11 +32,11 @@ const content: ContentNavItem[] = [
 
 export const navigationLinks: NavItem[] = [
   {
-    title: "文章",
+    title: "Blogs",
     content,
   },
   {
-    title: "项目",
+    title: "Projects",
     href: "/projects",
   },
   /*{
@@ -44,7 +44,7 @@ export const navigationLinks: NavItem[] = [
     href: "/uses",
   },*/
   {
-    title: "关于",
+    title: "About",
     href: "/now",
   },
 ];

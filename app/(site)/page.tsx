@@ -34,8 +34,8 @@ export default async function Home() {
   return (
     <div className="pb-10">
       <HeroSimple
-        title="做技术的生意人 构建解决问题的产品"
-        subtitle="要么增长 要么降本 要么提效 要么别做."
+        title="I'm a coder, creator and solopreneur"
+        subtitle="Growth Or Cost reduction"
       />
       <div className="container mt-12 max-w-6xl">
         <div className="grid grid-cols-1 place-items-start justify-between gap-8 lg:grid-cols-3">
@@ -49,7 +49,7 @@ export default async function Home() {
               href="/posts"
               className="mt-10 flex items-center py-2 text-sm text-accent-foreground underline-offset-4 hover:text-muted-foreground hover:underline"
             >
-              查看所有的博客 <ArrowRight className="ml-2 h-4 w-4" />
+              See all my posts <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </div>
           <aside className="w-full">
@@ -67,7 +67,7 @@ export default async function Home() {
       )}
       {aboutPage && (
         <div className="container max-w-6xl">
-          <h2 className="mb-8 font-heading text-4xl font-bold">我是谁</h2>
+          <h2 className="mb-8 font-heading text-4xl font-bold">Who I am</h2>
           <div className="grid grid-cols-1 place-items-start justify-between gap-12 lg:grid-cols-3">
             <div className="col-span-1 mx-auto flex flex-col items-center justify-center">
               <div className="group relative left-0 top-0">
@@ -100,7 +100,7 @@ export default async function Home() {
                   href="/now"
                   className="mt-10 flex items-center py-2 text-sm text-accent-foreground underline-offset-4 hover:text-muted-foreground hover:underline"
                 >
-                  看看我现在在做的项目 <ArrowRight className="ml-2 h-4 w-4" />
+                  All Projects <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </article>
             </div>

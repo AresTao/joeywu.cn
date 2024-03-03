@@ -19,7 +19,7 @@ export function HeroImage({ title, subtitle }: HeroProps) {
           className="aspect-square h-10 w-10 rounded-full border border-black"
           width={40}
           height={40}
-          src="/avatar-new.jpeg"
+          src="/avatar-new.png"
           alt={defaultAuthor.name}
         />
       </div>
@@ -30,7 +30,7 @@ export function HeroImage({ title, subtitle }: HeroProps) {
       <div className="hidden w-4/12 lg:block">
         <AspectRatio ratio={9 / 14}>
           <Image
-            src="/avatar-new.jpeg"
+            src="/avatar-new.png"
             alt={defaultAuthor.name}
             width={400}
             height={580}

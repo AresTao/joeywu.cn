@@ -10,7 +10,7 @@ export const projects = [
     title: "eub.cc",
     description: `shortlink as a service.`,
     href: "#",
-    mediaSrc: "/easysurvey.png",
+    mediaSrc: "/eub2.png",
     mediaType: "image",
   },
   {

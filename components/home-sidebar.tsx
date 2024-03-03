@@ -16,7 +16,7 @@ export function Sidebar({ className, ...props }: CardProps) {
     <>
       <Card className={cn("mb-4", className)} {...props}>
         <CardHeader>
-          <CardTitle>我在哪</CardTitle>
+          <CardTitle>Where I live</CardTitle>
         </CardHeader>
         <CardContent className="grid gap-4">
           <div className="flex items-center rounded-md pl-2 hover:bg-background/40 hover:backdrop-blur-lg">
@@ -40,7 +40,7 @@ export function Sidebar({ className, ...props }: CardProps) {
       </Card>
       <Card className={cn(className)} {...props}>
         <CardHeader>
-          <CardTitle>我在做的项目</CardTitle>
+          <CardTitle>My Projects</CardTitle>
         </CardHeader>
         <CardContent className="grid gap-4">
           {projects.slice(0, siteMetadata.projectsOnHomePage).map((project) => (
@@ -77,7 +77,7 @@ export function Sidebar({ className, ...props }: CardProps) {
         <CardFooter>
           <Button variant="ghost" className="w-full" asChild>
             <Link href="/projects">
-              所有的项目 <ArrowRight className="mr-2 h-4 w-4" />
+              All projects <ArrowRight className="mr-2 h-4 w-4" />
             </Link>
           </Button>
         </CardFooter>

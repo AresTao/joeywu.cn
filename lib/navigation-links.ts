@@ -32,7 +32,7 @@ const content: ContentNavItem[] = [
 
 export const navigationLinks: NavItem[] = [
   {
-    title: "Blogs",
+    title: "Contents",
     content,
   },
   {

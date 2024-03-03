@@ -89,7 +89,7 @@ export default async function PostPage({ params }: PostProps) {
       <nav aria-label="Breadcrumb">
         <ol role="list" className="hidden items-center gap-1 text-sm text-muted-foreground md:flex md:flex-row">
           <li>
-            <Link href="/" className="block transition hover:text-muted-foreground/70" aria-label="返回首页">
+            <Link href="/" className="block transition hover:text-muted-foreground/70" aria-label="back to home page">
               <span className="sr-only"> Home </span>
               <Home size={14} />
             </Link>
@@ -140,7 +140,7 @@ export default async function PostPage({ params }: PostProps) {
           </div>
           <Accordion type="single" collapsible>
             <AccordionItem value="table-of-contents">
-              <AccordionTrigger>Table Of Contents</AccordionTrigger>
+              <AccordionTrigger>table of contents</AccordionTrigger>
               <AccordionContent>
                 <TableOfContents chapters={post.headings} />
               </AccordionContent>
@@ -181,7 +181,7 @@ export default async function PostPage({ params }: PostProps) {
         <aside className="hidden lg:block">
           <Card className={cn("sticky top-28 mb-4")}>
             <CardHeader>
-              <CardTitle>Table Of Contents</CardTitle>
+              <CardTitle>table of contents</CardTitle>
             </CardHeader>
             <CardContent className="grid gap-4">
               <TableOfContents chapters={post.headings} />
@@ -189,7 +189,7 @@ export default async function PostPage({ params }: PostProps) {
             <Separator />
             <CardFooter>
               <div className="mb-4 mt-1 text-sm leading-snug text-muted-foreground">
-                <p className="mb-2">{`${post.readTimeMinutes} 分钟阅读时长`}</p>
+                <p className="mb-2">{`${post.readTimeMinutes} mins read`}</p>
                 <time>Create at: {format(parseISO(post.publishedDate), "LLLL d, yyyy")} </time>
                 <br />
                 {post.lastUpdatedDate && (

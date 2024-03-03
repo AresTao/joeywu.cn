@@ -28,7 +28,7 @@ const PostPreview = ({ post }: PostPreviewProps) => {
           <span className="opacity-50">|</span>
           <div className="flex items-center gap-1">
             <Timer size={16} />
-            <span>{`${post.readTimeMinutes} 分钟阅读时长`}</span>
+            <span>{`${post.readTimeMinutes} mins read`}</span>
           </div>
         </div>
         {post?.tags && (

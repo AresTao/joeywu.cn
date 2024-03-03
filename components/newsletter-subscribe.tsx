@@ -53,15 +53,15 @@ const NewsletterSubscribe = ({
 
     if (!response?.ok) {
       return toast({
-        title: "出问题了.",
-        description: "订阅失败,请稍后重试.",
+        title: "Something is wrong.",
+        description: "subscribe failed.",
         variant: "destructive",
       });
     }
 
     return toast({
       title: "🎉 Nice!",
-      description: "您可以收到我的推送了.",
+      description: "You can recieve my post now.",
     });
   };
 
@@ -101,7 +101,7 @@ const NewsletterSubscribe = ({
             <div className="mt-4 flex items-center justify-center">
               <Button asChild variant="ghost">
                 <Link href={siteMetadata.newsletterUrl} target="_blank">
-                  我先了解一下 <ArrowRight className="mr-2 h-4 w-4" />
+                  Let me read it first <ArrowRight className="mr-2 h-4 w-4" />
                 </Link>
               </Button>
             </div>

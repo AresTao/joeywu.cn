@@ -60,7 +60,7 @@ export function CommandDialogComponent({ ...props }: DialogProps) {
         onClick={() => setOpen(true)}
         {...props}
       >
-        <span className="inline-flex">搜索...</span>
+        <span className="inline-flex">Search...</span>
         <kbd className="pointer-events-none absolute right-1.5 top-1.5 hidden h-6 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100 sm:flex">
           <span className="text-xs">⌘</span>K
         </kbd>
@@ -68,7 +68,7 @@ export function CommandDialogComponent({ ...props }: DialogProps) {
       <CommandDialog open={open} onOpenChange={setOpen}>
         <CommandInput placeholder="Type a command or search..." />
         <CommandList>
-          <CommandEmpty>无相关结果.</CommandEmpty>
+          <CommandEmpty>No results.</CommandEmpty>
           <CommandGroup heading="Content">
             {navigationLinks.map((item) =>
               item.content ? (

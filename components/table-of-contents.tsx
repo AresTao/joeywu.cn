@@ -38,7 +38,7 @@ export function TableOfContents({ chapters }: TocProps) {
   }, [chapters]);
 
   return (
-    <nav className="flex items-center self-start" aria-label="目录">
+    <nav className="flex items-center self-start" aria-label="tableOfContents">
       <ol className="list-none space-y-3">
         {chapters.map((heading: PostHeading) => (
           <li
